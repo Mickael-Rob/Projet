@@ -11989,4 +11989,29 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.hero-scene {
+  position: relative;
+}
+.hero-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Image/ai-generated-9001236_1280.png);
+  background-size: cover;
+  filter: brightness(0, 3);
+}
+.hero-scene * {
+  position: relative;
+}
+.hero-scene .hero-scene-content {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
