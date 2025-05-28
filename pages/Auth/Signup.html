@@ -9,29 +9,50 @@
          <div class="mb-3">
             <label for="Nominput" class="form-label">NOM</label>
             <input type="text" class="form-control" id="Nominput" placeholder="Votre nom">
+            <div class="invalid-feedback">
+                Le Nom est requis.
+            </div>
         </div>
          <div class="mb-3">
             <label for="Prenominput" class="form-label">Prénom</label>
             <input type="Text" class="form-control" id="Prenominput" placeholder="Votre prénom">
+            <div class="invalid-feedback">
+                Le Prénom est requis.
+            </div>
         </div>
        <div class="mb-3">
             <label for="Clubinput" class="form-label">Votre club de football favoris</label>
             <input type="Text" class="form-control" id="Clubinput" placeholder="Votre équipe favorite">
+            <div class="invalid-feedback">
+                Une équipe est requise.
+            </div>
         </div>
         <div class="mb-3">
             <label for="Emailinput" class="form-label">Email</label>
             <input type="email" class="form-control" id="Emailinput" placeholder="test@mail.fr">
+            <div class="invalid-feedback">
+                Le mail n'est pas au bon format.
+            </div>
         </div>
         <div class="mb-3">
             <label for="Passwordinput" class="form-label">Mot de passe</label>
             <input type="password" class="form-control" id="Passwordinput">
+            <div class="invalid-feedback">
+                Le mot de passe n'est pas assez robuste : Au moins 8 caracteres, comprenant au moins 1 lettre majuscule, 1 chiffre et 1 caractère speciale.
+            </div>
+            <div class="valide-feedback">
+                Le mot de passe est robuste !
+            </div>
         </div>
         <div class="mb-3">
-            <label for="ValidatePasswordinput" class="form-label">Validez votre mot de passe</label>
+            <label for="ValidatePasswordinput" class="form-label">Confirmer votre mot de passe</label>
             <input type="password" class="form-control" id="ValidatePasswordinput">
+            <div class="invalid-feedback">
+                Les mots de passes ne sont pas identiques.
+            </div>
         </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary">Inscription</button>
+            <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
         </div>
     </form>
     <div class="text-center pt-3">
